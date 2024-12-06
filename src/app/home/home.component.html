@@ -1,0 +1,27 @@
+<nav>
+    <div class="nav-wrapper blue darken-2">
+      <a href="#" class="brand-logo" style="margin-left: 15px;">Mi Aplicación</a>
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#" class="waves-effect">Inicio</a></li>
+        <li><a href="#" class="waves-effect">Productos</a></li>
+        <li><a href="#" class="waves-effect">Categorías</a></li>
+        <li><a href="#" class="waves-effect" (click)="logout()">Cerrar Sesión</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+  <!-- Sidebar para dispositivos móviles -->
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Categorías</a></li>
+    <li><a href="#" (click)="logout()">Cerrar Sesión</a></li>
+  </ul>
+  
+  <!-- Contenido principal -->
+  <div class="container">
+    <app-productos></app-productos>
+  </div>
